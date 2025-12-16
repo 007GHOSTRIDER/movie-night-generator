@@ -1,0 +1,76 @@
+/* General layout */
+body {
+  font-family: sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+section {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+/* Cards */
+.card {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 6px;
+}
+
+/* Buttons */
+button {
+  margin-top: 6px;
+}
+
+/* Error styles */
+.invalid {
+  border: 1px solid red;
+  background-color: #ffdddd;
+}
+
+input:invalid {
+  border: 1px solid red;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+  margin-top: 6px;
+}
+
+
+.watchlist-card {
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.watchlist-title {
+  cursor: pointer;
+}
+
+.watchlist-title.watched {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.remove-btn {
+  background-color: darkred;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: red;
+}

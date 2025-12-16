@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movie Night Generator</title>
+  <link rel="stylesheet" href="movie-night.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Movie Night Generator</h1>
+    <p>Search movies, create a watchlist, and make a random pick.</p>
+  </header>
+
+  <main class="app-main">
+    <!-- Search section -->
+    <section id="search-section" class="panel">
+      <h2>Search</h2>
+      <form id="search-form">
+        <div class="field">
+          <label for="title">Title</label>
+          <input id="title" type="text" placeholder="e.g. Batman" />
+        </div>
+
+        <div class="field">
+          <label for="year">Year (optional)</label>
+          <input id="year" type="text" placeholder="2017" />
+        </div>
+
+        <button type="submit">Search</button>
+        <div id="error" class="error"></div>
+      </form>
+    </section>
+
+    <!-- Results -->
+    <section class="panel-group">
+      <!-- Search results -->
+      <section id="results-section" class="panel">
+        <h2>Results</h2>
+        <div id="results">
+          <p>Search results...</p>
+        </div>
+      </section>
+
+      <!-- Watchlist -->
+      <section id="watchlist-section" class="panel">
+        <h2>Watchlist</h2>
+        <div id="watchlist">
+          <p>No movies saved yet.</p>
+        </div>
+      </section>
+    </section>
+
+    <!-- Random picker -->
+    <section id="picker-section" class="panel">
+      <h2>Tonight’s Pick</h2>
+      <button id="pick-btn">Pick a Random Movie</button>
+      <div id="countdown"></div>
+      <div id="picked"></div>
+    </section>
+  </main>
+
+  <script src="api-key.js"></script>
+<script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+  <script src="movie-night.js"></script>
+</body>
+</html>
+
