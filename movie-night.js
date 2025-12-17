@@ -22,9 +22,13 @@ function runCountdown(seconds, onTick, onDone) {
     remaining -= 1;
 
     if (remaining <= 0) {
+      //stops the timer
       clearInterval(id);
+      // Call the onDone callback function that was passed into runCountdown
       onDone();
     } else {
+      // Call the onTick callback function that was passed into runCountdown 
+      // with the current remaining time
       onTick(remaining);
     }
   }, 1000); 
