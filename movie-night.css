@@ -33,10 +33,6 @@ input:invalid {
   border: 1px solid red;
 }
 
-/* Utility */
-.hidden {
-  display: none;
-}
 
 .error {
   color: red;
